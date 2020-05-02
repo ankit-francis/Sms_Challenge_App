@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { TendorComponent } from './features/tendor/tendor.component';
 import { AppMaterialModule } from './app-material/app-material.module';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { AppMaterialModule } from './app-material/app-material.module';
      HttpClientModule,
      AppMaterialModule
   ],
-  providers: [HttpService],
+  providers: [HttpService,DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
